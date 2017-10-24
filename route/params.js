@@ -28,7 +28,7 @@ var getConnections = function(apiKey) {
       json: true // Automatically parses the JSON string in the response
     };
   
-    rp(options)
+    request(options)
       .then(function (arrayConnections) {
           console.log('connections:', arrayConnections);
           for (var i = 0, len = arrayConnections.length; i < len; i++) {
