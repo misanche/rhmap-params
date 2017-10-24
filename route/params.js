@@ -21,7 +21,7 @@ function paramsRoute(apiKey) {
 var getConnections = function(apiKey) {
   return new Promise(function (resolve, reject) {
     var options = {
-      uri: 'https://'+ process.env.MILLICORE + '/box/api/projects/' + process.env.FH_WIDGET + '/connections',
+      uri: 'https://'+ process.env.FH_MILLICORE + '/box/api/projects/' + process.env.FH_WIDGET + '/connections',
       headers: {
           'X-FH-AUTH-USER': apiKey
       },
