@@ -1,0 +1,30 @@
+{
+  "name": "rhmap-params",
+  "version": "0.0.1",
+  "description": "rhmap module to retrieve fhparams of the running server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misanche/rhmap-params.git"
+  },
+  "keywords": [
+    "fhparams",
+    "rhmap",
+    "node"
+  ],
+  "author": "Mikel Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/misanche/rhmap-params/issues"
+  },
+  "homepage": "https://github.com/misanche/rhmap-params#readme",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  }
+}
