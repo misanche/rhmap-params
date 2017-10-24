@@ -32,7 +32,7 @@ var getConnections = function(apiKey) {
       .then(function (arrayConnections) {
           console.log('connections:', arrayConnections);
           for (var i = 0, len = arrayConnections.length; i < len; i++) {
-            var connection = arr[i];
+            var connection = arrayConnections[i];
             if (connection.environment == process.env.FH_ENV) {
               return resolve(connection);
             }
