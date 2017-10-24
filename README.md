@@ -15,8 +15,9 @@ below (using a single whitespace between key and values):
     "projectid":"<Project Id>",
     "connectiontag":"<Connection Tag>",
 }
+```
 
-##Usage
+## Usage
 The module should be initialised from your application.js 
 file as shown below. This will setup a new endpoint in your application called "/params", so ensure none of your endpoints are called params to avoid conflicts.
 
