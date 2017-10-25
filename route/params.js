@@ -98,7 +98,11 @@ var convertToFhParams = function(fhConfig) {
     }
   }
 
-  var fhParams = {
+  var response = {
+    "body": "",
+    "header": ""
+  }
+  var body = {
     "cuid": uuid.v1().replace(new RegExp("-","g"),"").toUpperCase(),
     "cuidMap": null,
     "destination": "web",
@@ -108,7 +112,20 @@ var convertToFhParams = function(fhConfig) {
     "projectid": config.projectid,
     "connectiontag": config.connectiontag
   }
-  return fhParams;
+  var header = {
+    "X-FH-cuid": body.cuid,
+    "X-FH-cuidMap": null,
+    "X-FH-destination": body.destination,
+    "X-FH-sdk_version": body.sdk_version,
+    "X-FH-appid": body.appid,
+    "X-FH-appkey": body.appkey,
+    "X-FH-projectid": body.projectid,
+    "X-FH-connectiontag": body.connectiontag
+  }
+  response.body = body;
+  response.header = header;
+  
+  return response;
 } 
 
 module.exports = paramsRoute;

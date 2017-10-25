@@ -1,6 +1,6 @@
 {
   "name": "rhmap-params",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "rhmap module to retrieve fhparams of the running server",
   "main": "index.js",
   "scripts": {
